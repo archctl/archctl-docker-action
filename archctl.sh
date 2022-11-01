@@ -1,3 +1,4 @@
 #!/bin/sh -l
 
-archctl $1 >> $GITHUB_OUTPUT
+output=$(archctl $1 | tr '\n' ' ')
+echo "text=$output" >> $GITHUB_OUTPUT
