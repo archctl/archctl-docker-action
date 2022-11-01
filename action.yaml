@@ -11,7 +11,7 @@ outputs:
     description: 'Exit code of the executed CLI command'
 runs:
   using: 'docker'
-  image: 'adrigaarcia/archctl:main'
+  image: 'docker://adrigaarcia/archctl:main'
   args:
     - ${{ inputs.args }}
 branding:
