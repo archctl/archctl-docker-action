@@ -1,5 +1,6 @@
 # action.yml
 name: 'Archctl'
+author: 'Adrián García Sáez-Benito'
 description: 'Using archctl from github actions'
 inputs:
   args: 
@@ -13,3 +14,6 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.args }}
+branding:
+  icon: 'package'
+  color: 'lightblue'
