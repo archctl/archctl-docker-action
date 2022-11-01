@@ -16,4 +16,4 @@ runs:
     - ${{ inputs.args }}
 branding:
   icon: 'package'
-  color: 'lightblue'
+  color: 'blue'
