@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Archctl Version
         id: version
-        uses: actions/archctl-docker-action
+        uses: archctl/archctl-docker-action@v1
         with:
           args: '-V'
       # Use the output from the `hello` step
