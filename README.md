@@ -19,7 +19,8 @@ The exit code the command execution results in.
 ## Example usage
 
 ```yaml
-uses: actions/archctl-docker-action
-with:
-  args: 'search <my-template-repo> --depth 5'
+- name: Archctl
+  uses: archctl/archctl-docker-action@v1
+    with:
+        args: 'search <my-template-repo> --depth 5'
 ```
