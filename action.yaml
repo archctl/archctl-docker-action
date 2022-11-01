@@ -1,0 +1,15 @@
+# action.yml
+name: 'Archctl'
+description: 'Using archctl from github actions'
+inputs:
+  args: 
+    required: true
+    default: 'World'
+outputs:
+  exit_code: # id of output
+    description: 'Exit code of the executed CLI command'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.args }}
