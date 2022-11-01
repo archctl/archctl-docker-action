@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  archctl:
+    runs-on: ubuntu-latest
+    name: A job to test archctl docker action
+    steps:
+      - name: Archctl Version
+        id: version
+        uses: actions/archctl-docker-action
+        with:
+          args: '-V'
+      # Use the output from the `hello` step
+      - name: Get exit code
+        run: echo "The exit code ${{ steps.version.outputs.exit_code }}"
